@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_d</title>
+</head>
+<body>
+    <header>
+        <h1>
+        Calculadora de média
+        </h1>
+    </header>
+    <main>
+        <form id="form">
+            <label for="nota1">Insira a 1º nota</label> 
+            <br>
+            <input placeholder="nota 1" type="number" id="nota1" max="10" step="0.1" required>
+            <br>
+            <br>
+            <label for="nota2">Insira a 2º nota</label>
+            <br>
+            <input placeholder="nota 2" type="number" id="nota2" max="10" step="0.1" required>
+            <br>
+            <br>
+            <button type="submit">Calcular Média</button>
+        </form>
+
+        <h1>A média do aluno é: 
+            <p id="resposta"></p>
+        </h1>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
