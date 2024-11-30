@@ -10,9 +10,11 @@ form.addEventListener("submit", (e) => {
     let invalor = form.invalor.value;
 
     let calcEntrada = invalor*0.5; 
-    let calcParcela = (invalor/3);
+    let calcParcela = calcEntrada/12;
 
+    p.style.fontSize = "large"
+    p.style.fontWeight = "bolder"
     p.innerText = `${incarro}`
-    entradaOut.innerText = `Entrada:R$ ${calcEntrada.toFixed(2)}`
-    parcelasOut.innerText = `Parcelas: 12x de R$ ${Math.round(calcParcela).toFixed(2)}`
+    entradaOut.innerText = `Entrada de R$ ${calcEntrada.toFixed(2)}`
+    parcelasOut.innerText = `+ 12x de R$ ${Math.round(calcParcela).toFixed(2)}`
 });
