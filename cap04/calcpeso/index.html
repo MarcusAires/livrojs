@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>
+            Calculadora de peso ideal
+        </h1>
+    </header>
+    <main>
+        <form>
+                <label for="nome">Nome:</label>            
+                <input type="text" 
+                name="nome" 
+                id="inome" 
+                required>
+                <br>
+                <label for="altura">Altura:</label>
+                <input type="number" 
+                name="altura"
+                id="ialtura"
+                min="0"
+                step="0.01" 
+                required>
+                <br>
+                <p>Sexo:</p>
+                <input type="radio" 
+                name="sexo" 
+                id="isfeminino" 
+                value="feminino"
+                required>
+            <label for="isfeminino">Feminino</label>
+            <input type="radio" 
+                name="sexo" 
+                id="ismasculino"
+                value="masculino"
+                required>
+            <label for="ismasculino">Masculino</label>
+            <br><br>
+                <button type="submit">Calcular o peso ideal</button>
+                <button type="reset">Limpar campos</button>
+                <br>
+            </form>
+    </main>
+    <h3></h3>
+    <h2></h2>
+    <script src="main.js"></script>
+</body>
+</html>
