@@ -1,0 +1,59 @@
+* {
+    background-color: royalblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top:0;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main";
+    grid-template-rows: auto 1fr;
+    justify-items: center; /* Centraliza horizontalmente */
+    align-items: center;  /* Centraliza verticalmente */
+    height: 50vh;        /* Garante que o grid ocupe a tela inteira */
+}
+
+header {
+    margin-top: 15vh;
+    text-align: center; /* Centraliza o texto dentro do header */
+}
+
+main {
+    margin-top: 10vh;
+    grid-area: main; /* Usar o nome da área definido em grid-template-areas */
+}
+
+form {
+    border-radius: 12px;
+    border: 10px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+input{
+    background-color: aliceblue;
+    color: black;
+    border-width: 3px;
+    border-radius: 8px;
+    margin: 4px;
+}
+label{
+    color: blue;
+    background-color: whitesmoke;
+}
+p{
+    color: blue;
+    background-color: aliceblue;
+}
+
+button{
+    border-radius: 12px;
+    padding: 10px;
+    background-color:crimson;
+    cursor: pointer;
+}
