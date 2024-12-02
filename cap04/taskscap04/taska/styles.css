@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+
+header {
+    text-align: left;
+    background-color: cadetblue;
+    margin-left: 20vh;
+    width: 100vh;
+    text-align: center;
+};
+
