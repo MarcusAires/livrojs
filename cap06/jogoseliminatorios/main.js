@@ -29,11 +29,5 @@ form.btListar.addEventListener("click", (e)=>{
     
     let lista = '';
     
-    for (const oclube of clubes){
-        const {clube} = oclube //desestrutura o objeto
-        
-        lista +=  + " x "
-    }
-
     outLista.innerText = lista
 })
