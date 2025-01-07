@@ -15,20 +15,6 @@ frm.addEventListener("submit", (e) => {
   frm.inClube.value = ""
   frm.inClube.focus()
 })
-<<<<<<< HEAD
-//botão para listagem dos clubes
-form.btListar.addEventListener("click", (e)=>{
-    e.preventDefault();
-    
-    if(clubes.length === 0){
-        alert('Adicione o nome de um clube para continuar');
-    }
-    
-    let lista = '';
-    
-    outLista.innerText = lista
-})
-=======
 
 frm.btListar.addEventListener("click", () => {
   // verifica se vetor clubes está vazio 
@@ -73,4 +59,3 @@ frm.btMontar.addEventListener("click", () => {
   // altera o conteúdo da tag outLista
   resp.innerText = jogos
 })
->>>>>>> d85b8e28d240eb463ad32c9cda47c5be56152a61
